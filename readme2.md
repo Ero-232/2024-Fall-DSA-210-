@@ -1,135 +1,121 @@
-# 2024- Fall- DSA- 210 Project Personal Expense Analysis 
- 
- Description 
- This depository contains the  law and data for my 2024 Fall Semester's DSA 210  design. The  end of this  design is to  dissect my  particular charges from October 1st to December 30th, identify patterns, and  estimate  sale actions to uncover correlations among parameters  similar as time,  quantum, and  sale  order. 
- 
---- 
- 
- Table of Contents 
- 1.( provocation)(#motivation) 
- 2.( Data Source)(#data- source) 
- 3.( Data Preprocessing)(#data- preprocessing) 
- 4.( Tools Used)(#tools- used) 
- 5.( Analysis and Visualizations)(#analysis- and- visualizations) 
--( sale frequence Analysis)(#transaction-  frequence- analysis) 
--( Time- Grounded Patterns)(#time- grounded- patterns) 
--( Top expenditure orders)(#top-  expenditure-  orders) 
--( 3- Month Trend Analysis)(# 3- month- trend- analysis) 
--( Statistical Tests)(#statistical- tests) 
- 6.( Findings)(#findings) 
- 7.( Limitations)(#limitations) 
- 8.( unborn Work)(#future- work) 
- 
---- 
- 
- provocation 
- The primary  thing of this  design is to more understand my spending habits by  assaying my bank account deals. This includes exploring 
- 
-- When deals  do most  constantly. 
-- Which  orders dominate my spending. 
-- How my charges change over time. 
-- perceptivity that can help optimize my  fiscal habits. 
- 
---- 
- 
- Data Source 
-- ** Dataset ** The dataset was exported from Akbank's mobile  operation in CSV format. 
-- ** Data Masking ** particular information  similar as current balances and income deals were removed using the nobalance.py script to  insure  sequestration. 
- 
- The  gutted dataset includes the following  crucial fields 
-- ** DateTime ** Date and time of the  sale. 
-- ** TransactionAmount ** The  quantum of the  sale. 
-- ** Description ** The  sale  order or place. 
- 
---- 
- 
- Data Preprocessing 
- To prepare the dataset for analysis 
- 1. Converted date and time strings to datetime objects for easier manipulation. 
- 2. Parsed and formalized  sale  quantities, removingnon-numeric characters and formatting inconsistencies. 
- 3. Dropped unused or  inapplicable columns( e.g., raw balance information). 
- 4. uprooted  fresh features  similar as 
-- Day of the week. 
-- Hour of the day. 
--Yearly trends. 
- 
---- 
- 
- Tools Used 
- The  design relies on the following tools and libraries 
- 
-- ** Python ** Core programming language for data analysis. 
-- ** Pandas ** For data cleaning, structuring, and manipulation. 
-- ** NumPy ** For numerical operations and  computations. 
-- ** Matplotlib & Seaborn ** For creating static visualizations. 
-- ** Scipy ** For conducting statistical tests. 
-- ** Jupyter Tablet ** For attestation and interactive  disquisition. 
- 
---- 
- 
- Analysis and Visualizations 
- 
- sale frequence Analysis 
-- ** Day of the Week ** A bar map visualizes the distribution of  sale counts across the days of the week. 
-- ** Hourly exertion ** Another bar map illustrates the number of deals for each hour of the day. 
- 
- Time- Grounded Patterns 
-- ** Heatmap ** A heatmap shows the  crossroad of days of the week and hours of the day,  pressing peak  sale times. 
-- ** KDE Plot ** A  viscosity plot visualizes  sale  quantities by the time of day, offering  perceptivity into high- value deals. 
- 
- Top expenditure orders 
-- ** Top Places ** A bar map highlights the top 10  sale  orders or  locales grounded on  frequence. 
- 
- 3- Month Trend Analysis 
-- ** diurnal Counts ** A line map displays  sale counts over the last three months. 
-- ** Retrogression Analysis ** A direct retrogression model evaluates whether  sale  frequence is trending up or down over this period. 
- 
- Statistical Tests 
-- ** T- Test ** A two- sample t- test compares  sale  quantities between morning( before 12 PM) and evening( after 12 PM) hours to determine if spending  geste 
-             varies significantly by time. 
- 
---- 
- 
- Findings 
- 1. ** sale Patterns ** 
-- Deals peak during specific hours of the day and days of the week. 
--High-  frequence  exertion aligns with typical work or  rest hours. 
- 
- 2. ** Spending Habits ** 
--Certain  orders or  merchandisers dominate  sale counts. 
-- No significant differences in  sale  quantities grounded on the time of day. 
- 
- 3. ** 3- Month Trends ** 
-- sale  frequence shows a stable or slightly  adding  trend. 
- 
---- 
- 
- Limitations 
- Data Limitations 
-- ** sequestration enterprises ** Some data fields were  barred to maintain  particular  sequestration. 
-- ** Sample Size ** The dataset covers only a 3- month period, limiting the  compass for long- term trend analysis. 
- 
- Methodological Limitations 
-- ** Subjectivity in Categorization ** sale descriptions may not directly reflect spending  orders. 
-- ** Lack of Contextual Data ** No information about  sale intent or external factors affecting spending. 
- 
---- 
- 
- unborn Work 
- 1. ** Longitudinal Analysis ** Expand the dataset to cover a full time or multiple times to observe long- term trends. 
- 2. ** Advanced ways ** Incorporate machine  literacy models to  prognosticate  unborn spending patterns or identify anomalies. 
- 3. ** Interactive Visualizations ** make a web- grounded dashboard for dynamic  disquisition of the dataset. 
- 4. ** Detailed Categorization ** apply NLP  ways to more classify  sale descriptions into meaningful  orders. 
- 
---- 
- 
- Depository Structure 
-- ** analysis.py ** Main script for data cleaning, analysis, and visualization. 
-- ** nobalance.py ** Script for masking sensitive data. 
-- ** data_nobalance.csv ** Cleaned dataset used in the analysis. 
-- ** Figure_X.png ** Visualizations generated by the analysis script. 
-- ** README.md ** design attestation( this  train). 
- 
---- 
- 
- Script  prosecution and visualization  labors are included in this depository for reference. 
+# Project: Personal Expense Analysis for 2024-Fall-DSA-210
+
+## Overview
+The code and data for my DSA 210 project from the fall semester of 2024 are in this repository. In order to find correlations between variables like time, quantity, and transaction category, the project's goal is to examine my personal expenses from October 1st to December 30th, look for trends, and assess transaction behaviors.
+
+---
+
+## Contents Table
+[Inspiration](#inspiration)
+2. [Source of Data](#data-source)
+3. [Preprocessing Data](#preprocessing-data)
+4. [Used Tools](#tools-used)
+5. [Visualizations and Analysis](#visualizations-and-analysis)
+    [Analysis of Transaction Frequencies](#acquisition-frequency-analysis)
+    [Patterns Based on Time](#patterns-based on time)
+    - [Highest Cost Types](#highest-cost-categories)
+    (#3-month-trend-analysis) - [3-Month Trend Analysis]
+    [Tests of Statistics](#tests-statistical)
+6. [Results](#findings)
+7. [Restrictions](#restrictions)
+8. [Work for the Future](#future-work)
+
+---
+
+## Inspiration
+This project's main objective is to examine my bank account activities in order to have a better understanding of my spending patterns. This involves investigating:
+
+When do transactions happen most often?
+Which categories are most prevalent?
+When do transactions happen most often?
+Which areas account for the majority of my expenditures?
+How my spending evolves over time.
+- Knowledge that will help me improve my financial practices.
+
+---
+
+**Dataset:** is the data source. The dataset was exported in CSV format using the Akbank mobile application.
+**Data Masking:** To protect privacy, personal data including income transactions and current balances were eliminated using the `nobalance.py` script.
+
+The following crucial fields are present in the cleaned dataset:
+- **DateTime:** The transaction's date and time.
+- **TransactionAmount:** The transaction's total value.
+**Description:** The type of transaction or location.
+
+---
+
+## Preparing Data
+To get the dataset ready for examination:
+1. To facilitate handling, date and time strings were converted to `datetime` objects.
+2. Transaction amounts were parsed and standardized, eliminating formatting errors and non-numeric characters.
+3. Removed unnecessary or superfluous columns (raw balance data, for example).
+4. Extra features like the day of the week were extracted.
+    The time of day.
+    Monthly patterns.
+
+---
+
+## Equipment Used
+The following libraries and tools are necessary for the project:
+
+One essential programming language for data analysis is Python.
+**Pandas:** To clean, organize, and manipulate data.
+- **NumPy:** For computations and numerical operations.
+To create static visualizations, use Seaborn with Matplotlib.
+To do statistical tests, use Scipy.
+**Jupyter Notebook:** For interactive exploration and documentation.
+
+---
+
+## Visualizations and Analysis
+
+### Transaction Frequency Analysis- **Day of the Week:** The distribution of transaction counts by day of the week is shown in a bar chart.
+**Hourly Activity:** The quantity of transactions for each hour is shown in another bar chart.
+
+This is an hourly activity. The quantity of transactions for every hour of the day is depicted in another bar chart.
+
+### Patterns Based on Time
+**Heatmap:** A heatmap highlights periods of high transaction volume by displaying the intersection of the hours of the day and the days of the week.
+**KDE Plot:** A density plot provides information about high-value transactions by visualizing transaction quantities by time of day.
+
+### Top Cost Types- **Top Locations:** The top ten transaction categories or locations are displayed in a bar chart according to frequency.
+
+### Trend Analysis for Three Months: **Daily Counts:** The number of transactions during the previous three months is shown in a line chart.
+Regression analysis: The trend of transaction frequency over this time period is assessed using a linear regression model.
+
+### Tests of Statistics: **T-Test:** To ascertain whether spending patterns differ significantly by time, a two-sample t-test analyzes transaction quantities between morning (before 12 PM) and evening (after 12 PM) hours.
+
+---
+
+## Results 1. **Transaction Trends:** - Transactions are at their highest on particular days and hours of the day.
+   High-frequency activity coincides with regular work or playtime.
+
+2. **Spending Patterns:** - Transaction counts are dominated by particular merchants or categories.
+   There aren't any notable variations in transaction amounts according to the time of day.
+
+3. **3-Month Trends:** - The frequency of transactions exhibits a steady or marginally rising trend.
+
+---
+
+## Restrictions ### Data Restrictions - **Privacy Concerns:** To protect individual privacy, certain data fields were eliminated.
+The sample size is as follows: Because the dataset only spans three months, it is not suitable for long-term trend analysis.
+
+### Methodological Restrictions: **Categorization Subjectivity:** Transaction descriptions might not be a true representation of spending categories.
+- **Lack of Contextual Data:** No details regarding the purpose of the transaction or outside variables influencing expenditure.
+
+---
+
+## Upcoming Projects
+1. **Longitudinal Analysis:** To see long-term patterns, extend the dataset to span one or more years.
+2. **Advanced Techniques:** Use machine learning algorithms to spot irregularities or forecast future expenditure trends.
+3. **Interactive Visualizations:** Create a dashboard that can be accessed online for dynamic dataset exploration.
+4. **Detailed Categorization:** Use natural language processing (NLP) methods to more effectively group transaction descriptions into relevant groups.
+
+---
+
+## Structure of the Repository
+The primary script for cleaning, analyzing, and visualizing data is **`analysis.py`:**.
+- **`nobalance.py`:** A script to conceal private information.
+The cleaned dataset that was used for the analysis is **`data_nobalance.csv`:**.
+- **`Figure_X.png`:** The analysis script's visualizations.
+This file, **`README.md`:**, is the project documentation.
