@@ -90,13 +90,13 @@ The following libraries and tools are necessary for the project:
 
 ## Results
 
-1. **Transaction Trends:**  
-   - Transactions are at their highest on particular days and hours of the day.  
-   - High-frequency activity coincides with regular work or playtime.  
+1. **Tendency of Transactions:**  
+   - Transactions proliferate at definite days and at specific hours of the day. 
+   - High-frequency activity is concurrent to the ordinary time of carrying out work and leisure.
 
-2. **Spending Patterns:**  
-   - Transaction counts are dominated by particular merchants or categories.  
-   - There aren't any notable variations in transaction amounts according to the time of day.  
+2. **Spending Behaviors:**  
+   - Transaction counts generally pertain to certain merchants or categories.
+   - There are no significant differences in transaction amounts based on the time of day.
 
 3. **Month Trends:**  
    - The frequency of transactions exhibits a steady or marginally rising trend.  
