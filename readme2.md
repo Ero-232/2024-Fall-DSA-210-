@@ -99,7 +99,7 @@ The following libraries and tools are necessary for the project:
    - Transaction counts are dominated by particular merchants or categories.  
    - There aren't any notable variations in transaction amounts according to the time of day.  
 
-3. **3-Month Trends:**  
+3. **Month Trends:**  
    - The frequency of transactions exhibits a steady or marginally rising trend.  
 
 ---
