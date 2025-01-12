@@ -11,10 +11,10 @@ The code and data for my DSA 210 project from the fall semester of 2024 are in t
 3. [Preprocessing Data](#preprocessing-data)
 4. [Used Tools](#tools-used)
 5. [Visualizations and Analysis](#visualizations-and-analysis)
-    [Analysis of Transaction Frequencies](#acquisition-frequency-analysis)
-    [Patterns Based on Time](#patterns-based on time)
-    - [Highest Cost Types](#highest-cost-categories)
-    (#3-month-trend-analysis) - [3-Month Trend Analysis]
+    [Analysis of Transaction Frequencies](#transaction-frequency-analysis)
+    [Patterns Based on Time](#patterns-based-on-time)
+    [Highest Cost Types](#highest-cost-categories)
+    [3-Month Trend Analysis](#3-month-trend-analysis)
     [Tests of Statistics](#tests-statistical)
 6. [Results](#findings)
 7. [Restrictions](#restrictions)
@@ -69,7 +69,7 @@ To do statistical tests, use Scipy.
 
 ## Visualizations and Analysis
 
-### Transaction Frequency Analysis- **Day of the Week:** The distribution of transaction counts by day of the week is shown in a bar chart.
+### Transaction Frequency Analysis **Day of the Week:** The distribution of transaction counts by day of the week is shown in a bar chart.
 **Hourly Activity:** The quantity of transactions for each hour is shown in another bar chart.
 
 This is an hourly activity. The quantity of transactions for every hour of the day is depicted in another bar chart.
