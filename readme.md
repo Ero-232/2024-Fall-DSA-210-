@@ -13,16 +13,16 @@ This is my Fall Semester project for DSA 210 for the year 2024. The objective of
     - [Analysis of Transaction Frequencies](#transaction-frequency-analysis)  
     - [Patterns Based on Time](#patterns-based-on-time)  
     - [Highest Cost Types](#top-cost-types)  
-    - [3-Month Trend Analysis](#trend-analysis-for-three-months)  
-    - [Tests of Statistics](#tests-of-statistics)  
+    - [Trend Analysis over the Last Three Months ](#trend-analysis-for-three-months)  
+    - [Statistical Tests](#tests-of-statistics)  
 6. [Results](#results)  
-7. [Restrictions](#restrictions)  
+7. [Limitations](#restrictions)  
 8. [Work for the Future](#upcoming-projects)  
 
 ---
 
 ## Inspiration
-This project's main objective is to examine my bank account activities in order to have a better understanding of my spending patterns. This involves investigating:  
+This project is primarily focused on understanding the patterns of my bank account activities and spending behavior. This involves investigating:  
 - When do I make transactions and when do they happen most often?  
 - Which categories are the most prevalent?  
 - Which areas account for the majority of my expenses?  
