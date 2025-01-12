@@ -6,7 +6,7 @@ The code and data for my DSA 210 project from the fall semester of 2024 are in t
 ---
 
 ## Contents Table
-[Inspiration](#inspiration)
+1. [Inspiration](#inspiration)
 2. [Source of Data](#data-source)
 3. [Preprocessing Data](#preprocessing-data)
 4. [Used Tools](#tools-used)
