@@ -1,8 +1,7 @@
 # 2024-Fall-DSA-210 Project: Personal Expense Analysis
 
 ## Description
-This repository contains the code and data for my 2024 Fall Semester's DSA 210 project. The aim of this project is to analyze my personal expenses from October 1st to December 30th, identify patterns, and evaluate transaction behaviors to uncover correlations among parameters such as time, amount, and transaction category.
-
+This project involves examining my personal expenses from October 1st to December 30th during the 2024 Fall Semester, aiming to detect patterns and assess transaction behaviors to find connections between factors like time, amount, and transaction category. 
 ---
 
 ## Table of Contents
