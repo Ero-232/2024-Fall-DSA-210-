@@ -1,9 +1,8 @@
 # Project: Personal Expense Analysis for 2024-Fall-DSA-210
 
 ## Overview
-Thıs ıs my Fall 2024 DSA 210 Semester project. The project's goal is to examine my personal expenses from October 1st to December 30th, and assess transaction behaviors to find correlations between variables like time, quantity, and   the transactions category.
+This is my Fall Semester project for DSA 210 for the year 2024. The objective of the study is to capture personal expenditure from October to December of this same year, analyse patterns of spending and ascertain possible correlations in terms of timing, amount and the category of expenditure.
 
----
 
 ## Contents Table
 1. [Inspiration](#inspiration)
