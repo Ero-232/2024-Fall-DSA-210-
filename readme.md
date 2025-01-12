@@ -1,7 +1,7 @@
 # Project: Personal Expense Analysis for 2024-Fall-DSA-210
 
 ## Overview
-The code and data for my DSA 210 project from the fall semester of 2024 are in this repository. The project's goal is to examine my personal expenses from October 1st to December 30th, look for trends, and assess transaction behaviors to find correlations between variables like time, quantity, and transaction category.
+Thıs ıs my Fall 2024 DSA 210 Semester project. The project's goal is to examine my personal expenses from October 1st to December 30th, and assess transaction behaviors to find correlations between variables like time, quantity, and   the transactions category.
 
 ---
 
@@ -24,31 +24,31 @@ The code and data for my DSA 210 project from the fall semester of 2024 are in t
 
 ## Inspiration
 This project's main objective is to examine my bank account activities in order to have a better understanding of my spending patterns. This involves investigating:  
-- When do transactions happen most often?  
-- Which categories are most prevalent?  
-- Which areas account for the majority of my expenditures?  
-- How my spending evolves over time.
+- When do I make transactions and when do they happen most often?  
+- Which categories are the most prevalent?  
+- Which areas account for the majority of my expenses?  
+- How does my spending change in the period?
 
-The knowledge gained will help improve my financial practices.
+The knowledge gained here, will assist me to improve my financial practices.
 
 ---
 
 ## Source of Data
-**Dataset:** The data source is a CSV file exported using the Akbank mobile application.  
-**Data Masking:** To protect privacy, personal data including income transactions and current balances were eliminated using the `nobalance.py` script.
+**Dataset:** The raw data source is a CSV file exported using from my Akbank mobile application.  
+**Data Masking:** To protect privacy, personal data including income transactions and current balances were eliminated using the `nobalance.py` script. In this repo, you are only seeing data_nobalance.csv, ie the processed file.
 
-The following crucial fields are present in the cleaned dataset:  
-- **DateTime:** The transaction's date and time.  
-- **TransactionAmount:** The transaction's total value.  
-- **Description:** The type of transaction or location.
+Currently, only the following are present in this dataset:  
+- **DateTime:**
+- **TransactionAmount:**  
+- **Description:** 
 
 ---
 
 ## Preparing Data
 To get the dataset ready for examination:  
 1. Date and time strings were converted to `datetime` objects to facilitate handling.  
-2. Transaction amounts were parsed and standardized, eliminating formatting errors and non-numeric characters.  
-3. Removed unnecessary or superfluous columns (e.g., raw balance data).  
+2. Transaction amounts are parsed and standardized, eliminating formatting errors and non-numeric characters.  
+3. I have removed unnecessary or superfluous columns (e.g., raw balance data).  
 4. Extracted extra features such as:  
     - Day of the week  
     - Time of day  
@@ -58,12 +58,12 @@ To get the dataset ready for examination:
 
 ## Equipment Used
 The following libraries and tools are necessary for the project:  
-- **Python:** One essential programming language for data analysis.  
-- **Pandas:** To clean, organize, and manipulate data.  
-- **NumPy:** For computations and numerical operations.  
-- **Matplotlib and Seaborn:** To create static visualizations.  
-- **Scipy:** To perform statistical tests.  
-- **Jupyter Notebook:** For interactive exploration and documentation.
+- **Python:**
+- **Pandas:** 
+- **NumPy:** 
+- **Matplotlib and Seaborn:**  
+- **Scipy:** 
+- **Jupyter Notebook:** 
 
 ---
 
